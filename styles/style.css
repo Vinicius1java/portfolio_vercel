@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); /* font: krone one */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap'); /*  font montserrat*/
+
+/* Criando variavel no css para salvar cor */
+
+:root{
+    --cor-primaria:#000000;     /* variavel 1*/
+    --cor-secundaria: #f6f6f6;   /* variavel 2*/
+    --cor-tercearia: #22d4fd;    /* variavel 3*/
+    --cor-hover:#272727;
+
+    --fonte-primaria:"Krona One", sans-serif;
+    --fonte-secundaria:"Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*height: 100vh; Colocar 100% do uso da tela */
+    box-sizing: border-box;/*Faz com que o elemento filho não saia do pai */
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 1.67rem 0rem 0rem 12.56rem;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__menu__link {
+    color:var(--cor-tercearia);
+    font-family:var(--fonte-secundaria);
+    font-size: 1.50rem;
+    font-weight: 37.5rem;
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 6.68rem 12.56rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 2.5rem; /* Espaçamento entre linhas e coluna */
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color:var(--cor-tercearia);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.50rem;
+    font-family:var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+.apresentacao__links__subtitulo {
+    font-family:var(--fonte-primaria);
+    font-weight: 25rem;
+    font-size: 1.50rem;
+}
+
+.apresentacao__links__navegacao {
+    /* background-color: #22d4fd; */
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    border: 0.125rem solid var(--cor-tercearia);
+    width: 50%;
+    text-align: center; /* centralizar apenas o texto */
+    border-radius: 0.5rem;
+    font-size: 1.50rem;
+    padding: 1.34rem 0rem;
+    text-decoration: none; /* tira a linha e as cores das ancoras */
+    font-family:var(--fonte-secundaria);
+    font-weight: 37.5rem;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__links__link:hover { /*HOVER: Faz com que ao passar por cima com o mouse mude a cor */
+    background-color: var(--cor-hover);
+    width: 25rem;
+}
+
+.apresentacao__imagem {
+    justify-content: center;
+}
+
+.rodape {
+    color:var(--cor-primaria);
+    background-color: var(--cor-tercearia);
+    padding: 1.5rem;
+    text-align: center;
+    font-family:var(--fonte-secundaria);
+    font-size: 1.50rem;
+    font-weight: 25rem;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabeçalho menu {
+
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto; /* automatico define o tamanho de acordo com os elmentos e paddin que estabelecemos */
+    }
+
+}
+
+@media (max-width: 800px) {
+    
+}
+
+@media (max-width:480px) {
+
+}

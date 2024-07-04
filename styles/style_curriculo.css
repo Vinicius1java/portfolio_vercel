@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    padding: 0% 0% 0% 2%;
+}
+
+.informacoes__foto {
+    border-radius: 50%;
+    border: 1px solid #22d4fd;
+}
+
+.informacoes__pessoal {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 20px;
+}
+
+.informacoes__pessoal__sexo {
+    display: flex;
+    gap:10px;
+}
+
+.informacoes__pessoal__sexo__figura {
+    width: 20px;
+}
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0px 0px 0px;
+}
+
+.formacao__informacao {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid #22d4fd;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 0.5%;   
+}
+
+.formacao__informacao:hover { /*HOVER: Faz com que ao passar por cima com o mouse mude a cor */
+    background-color: #272727;
+}
+
+.formacao__informacao__livro {
+    width: 80px;
+}
+
+.formacao__informacao__descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 150px;
+    justify-content: space-evenly;
+}
+
+.formacao__informacao__ensino {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
